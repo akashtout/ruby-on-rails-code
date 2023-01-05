@@ -1,0 +1,8 @@
+To switch a repository on GitHub from public to private, or vice versa, follow these instructions:
+
+Go to your repository on GitHub
+Go to the "Settings" tab
+Scroll all the way down to the section labeled "Danger Zone"
+To change the public/private state of the repository:
+To make it private: Click the button labeled "Make Private" and follow the instructions
+To make it public: Click the button labeled "Make Public" and follow the instructions
