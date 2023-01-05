@@ -1,0 +1,42 @@
+git commit --amend
+
+git push origin crud-applicants -f
+when commit and push in origin are done but you want changes in  commit so use these command
+git checkout -b"active-admin-applied"
+git push origin active-admin-applied
+
+git stash save "spec-helper-yml"
+git stash apply stash@{0}
+git checkout -b "branch_name" --track origin/branch_name
+
+git pull --rebase origin Devise_Team_member
+if both member use same branch  and work in case you want to take pull of your team code in same branch name  so you can create same name branch and take pull. using --rebase
+if you want to take pull with same branch same so use --track
+git stash show -p stash@{0}
+
+git checkout branch name
+git checkout -b branch_name
+
+use "git restore <file>..." to discard changes in working directory
+
+git reset --soft HEAD~1
+rollback commit
+
+git checkout -b "sub-main" --track origin/sub-main
+
+git push origin fix-bugs -f
+git commit --amend
+
+git branch -m "search-bar-applicant"
+
+git pull --rebase origin search-bar-applicant
+
+git stash save "schema-yml"
+
+git branch -m "convert-primaryid-from-integer-to-uuid"
+
+git  stash drop stash@{29}
+delete stash
+
+git reset --soft HEAD~1
+rollback commit
