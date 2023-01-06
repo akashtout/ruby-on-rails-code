@@ -73,5 +73,10 @@ controller//file code
           </div>
           <% end %>  
         </div>
+             
+             
+             ---------------------------------
+              for show error messages in rails 7 
+               change , data: { turbo: false } in form
 
 
