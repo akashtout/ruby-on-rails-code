@@ -12,3 +12,28 @@ import Rails from '@rails/ujs';
 Rails.start();
 
 3) Restart your application server
+
+
+
+----------------------------------------------------------------------------
+
+1) Adds helper to the layout in the head section - if the application.html.erb layout exists in your project,
+it adds the javascript_importmap_tags line before the closing </head> tag. 
+This helper includes JavaScript libraries pinned by import maps. If your project does not include the standard layout file, it will render the information about the helper so you can add it by yourself.
+
+2) Creates app/javascript/application.js file - it adds the comment about import maps to let you know that
+there is a new place where you should define dependencies.
+
+3) Creates vendor/javascript directory - this is where JavaScript libraries will be stored if 
+they are not served directly via a URL.
+
+4) Updates sprockets manifest, if it exists - sprockets needs to know about 
+the JavaScript files placed inside the vendor/javascript directory.
+
+5) Creates config/importmap.rb file - this will contain 
+the list of libraries used by Rails (something like package.json file).
+
+6) Copies bin/importmap file and sets the correct permission to execute it - this file is used to pin and unpin specific libraries.
+
+As soon as this process finishes, you are ready to install JavaScript libraries using
+the ./bin/importmap file, and Rails is prepared to serve those files to your visitors.
