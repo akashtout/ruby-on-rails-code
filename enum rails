@@ -1,0 +1,10 @@
+enum in rails 
+
+in model.rb
+enum status: [:pending, :scheduled, :selected, :rejected, :onHold, :notApplicable, :notResponding]
+
+in view form 
+
+  <%= f.label :status, class: "form-label" %>
+  <%= f.select :status, options_for_select([['Pending','pending'], ['Scheduled','scheduled'], ["Selected","selected"], ["Rejected","rejected"],
+  ["On Hold","onHold"], ["Not Applicable","notApplicable"], ["Not Responding","notResponding"]])%>
