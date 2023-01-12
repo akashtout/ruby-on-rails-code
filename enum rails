@@ -1,4 +1,4 @@
-enum in rails 
+enum in rails for string
 
 in model.rb
 enum status: [:pending, :scheduled, :selected, :rejected, :onHold, :notApplicable, :notResponding]
@@ -8,3 +8,14 @@ in view form
   <%= f.label :status, class: "form-label" %>
   <%= f.select :status, options_for_select([['Pending','pending'], ['Scheduled','scheduled'], ["Selected","selected"], ["Rejected","rejected"],
   ["On Hold","onHold"], ["Not Applicable","notApplicable"], ["Not Responding","notResponding"]])%>
+  -----------------------------------------------------------------------------------------------------------------
+  enum for integer data rails
+  
+  in form
+  <%= f.select(:status, Interview.statuses.keys) %>
+
+
+in model
+
+enum status: { pending: 0, scheduled: 1, selected: 2, rejected: 3,
+   onHold: 4, notApplicable: 5, notResponding: 6 }
