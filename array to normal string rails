@@ -1,0 +1,5 @@
+a = article.tags.pluck(:name)
+use this forarray to normal string a.join("")
+
+with the help of id find name 
+<%= TeamMember.find(interview.team_member_id).name %>
