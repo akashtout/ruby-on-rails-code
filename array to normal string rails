@@ -3,3 +3,9 @@ use this forarray to normal string a.join("")
 
 with the help of id find name 
 <%= TeamMember.find(interview.team_member_id).name %>
+------------------------------------------------------------------
+# config/initializers/time_formats.rb
+
+Time::DATE_FORMATS[:custom_datetime] = "%d.%m.%Y"
+Date::DATE_FORMATS[:custom_datetime] = "%d/%m/%Y"
+call by using .to_s(:custom_datetime)
