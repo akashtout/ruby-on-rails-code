@@ -78,5 +78,10 @@ controller//file code
              ---------------------------------
               for show error messages in rails 7 
                change , data: { turbo: false } in form
+  -------------------------------------------------------------
+        added page in nested routes +rails
+               get '/team_members/:id/assign_interviews' => 'interviews#assign_interview', as: "assign_interview" in routes
+               <%= link_to "Assign for Team member", assign_interview_path(current_team_member) , class: "dropdown-item" %>  in button
+               
 
 
