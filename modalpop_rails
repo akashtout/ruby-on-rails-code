@@ -1,0 +1,33 @@
+create partial file _modalpop
+create js file 
+create file partial same as js file name
+render modal pop in where have button
+added remote true in button 
+
+
+<div class="modal" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Feedback</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="feedback_modal">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+-----------------------------------------------------------------------------------------------------------
+js file $("#feedback_modal").html("<%= escape_javascript(render 'file_name') %>");
+$("#myModal").modal("show");
+
+----------------------------------------------------------------------------------------
+<%= render partial: "modal_popup" %>
+<%= link_to "button name", path_path(id), remote: true %>
+----------------------------------------------------------------------------------------
+file code you want to render 
